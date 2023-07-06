@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://thymeleaf.org">
+<head>
+  <meta charset="UTF-8" />
+  <title>Employee Home Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- <link href="/style.css"> -->
+  <style>
+    .container {
+      margin-top: 50px;
+      text-align: center;
+    }
+    .header {
+      background: rgb(235, 252, 248);
+      padding-top: 50px;
+      padding-bottom: 50px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .btn {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+<div class="header">
+  <h2 th:text="'EMPLOYEE MANAGEMENT SYSTEM'"></h2>
+</div>
+<div class="container">
+  <a class="btn btn-info" th:href="@{/home/add}">Add Data</a>
+  <a class="btn btn-info" th:href="@{/home/list}">List Data</a>
+</div>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
